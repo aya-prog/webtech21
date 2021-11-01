@@ -1,49 +1,106 @@
-.image-grid {
-    /* Arrange children using flexbox */
-    display: flex;
-    /* ALlow images to display on multiple lines rather than a single line */
-    flex-wrap: wrap;
-    /* Container should take up only 90% of the browser, leave 5% space on each side */
-    width: 90%;
-    /* Center container */
-    margin: 0 auto;
-  }
-  .grid-image {
-    /* images display inline by default and act like text. We want them to act like divs, so display block */
-    display: block;
-    /* our width setting for mobile, one image per line */
-    flex-basis: 100%;
-    /* provide some space between our images */
-    padding: 10px;
-    /* ensure padding doesn't cause images to wrap, it should be within the width rather than in addition */
-    box-sizing: border-box;
-  }
-   
-  /* increase images per line as browser gets larger using media queries
-     this first query makes two images per line at 640px width */
-  @media only screen and (min-width: 640px) {
-    .grid-image {
-      flex-basis: 50%;
-    }
-  }
-   
-  /* three images per line when browser width exceeds 960px */
-  @media only screen and (min-width: 960px) {
-    .grid-image {
-      flex-basis: 33.333%;
-    }
-  }
-   
-  /* four images per line when browser width exceeds 1280px */
-  @media only screen and (min-width: 1280px) {
-    .grid-image {
-      flex-basis: 25%;
-    }
-  }
-   
-  /* five images per line when browser width exceeds 1600px */
-  @media only screen and (min-width: 1600px) {
-    .grid-image {
-      flex-basis: 20%;
-    }
-  }
+H1{
+  background-color: rgb(27, 124, 27);
+  text-align: center;
+  color: white;
+}
+
+.header{
+
+  background-color: rgb(5, 71, 5);
+  color: grey;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 10px;
+
+}
+
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.berlin {
+  grid-column: 1/2;
+  grid-row: 1;
+}
+.bernau {
+  grid-column: 2/3;
+  grid-row: 1;
+
+}
+.brandenburg {
+
+  grid-column: 3/4;
+  grid-row: 1;
+
+}
+.bremen { 
+
+  grid-column: 4/5;
+  grid-row: 1;
+
+
+}
+/* ---------------------------------Zeile 2------------------------------------------------------- */
+.bremerhaven{
+  grid-column: 1/2;
+  grid-row: 2;
+
+
+}
+.madrid{
+  grid-column: 2/3;
+  grid-row: 2;
+
+
+}
+.magdeburg{
+  grid-column: 3/4;
+  grid-row: 2;
+
+
+}
+.mainz{
+  grid-column: 4/5;
+  grid-row: 2;
+
+
+}
+/* ---------------------------------Zeile 3------------------------------------------------------- */
+
+.mannheim{
+  grid-column: 1/2;
+  grid-row: 3;
+
+
+}
+.marburg{
+  grid-column: 2/3;
+  grid-row: 3;
+
+
+}
+.newyork{
+  grid-column: 3/4;
+  grid-row: 3;
+
+
+}
+.stockholm{
+  grid-column: 4/5;
+  grid-row: 3;
+
+
+}
+
+
+.stadt{
+
+  padding: 10px;
+  border: 2px solid rgb(252, 249, 249);
+  text-align: center;
+  box-shadow: 10px 20px 15px rgb(212, 214, 212);
+
+}
