@@ -2,8 +2,12 @@ body{
     font-family: Verdana;
 }
 
+
+
+
 header{
-    background-color: #afafaf;
+    display: inline;
+    background-color:   rgb(75, 67, 67);
     color: #FF5F00;
     text-align: center;
     padding: 8px;
